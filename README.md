@@ -6,7 +6,7 @@ PS：用于管理参数，对梯度求平均，相当于监管者。
 Worker：用于batch的训练迭代，相当于工作者。  
   
 ##### 如何使用
-1,新建一个dataset文件夹    
+1,新建一个dataset文件夹,并且放入MNIST数据集。      
 ```python
 mkdir dataset
 ```
