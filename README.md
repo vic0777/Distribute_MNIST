@@ -10,7 +10,7 @@ Worker：The training iteration for batch is equivalent to the worker.
 ```python
 mkdir dataset
 ```
-2,This experiment uses one PS and one worker, so we must open two terminals. 
+2. This experiment uses one PS and one worker, so we must open two terminals. 
 ```python
 #ps
 python tensorflow_mnist.py --dataset_dir=`pwd`/dataset --result_dir=`pwd`/result  --job_name=ps
