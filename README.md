@@ -1,16 +1,16 @@
 # mnist_distribute
 TensorFlow Distribute MNIST
       
-##### 分布式简单原理
-PS：用于管理参数，对梯度求平均，相当于监管者。    
-Worker：用于batch的训练迭代，相当于工作者。  
+## Distributed Simple Principle
+PS：It is used to manage parameters and average the gradient, which is equivalent to the supervisor.      
+Worker：The training iteration for batch is equivalent to the worker.    
   
-##### 如何使用
-1,新建一个dataset文件夹,并且放入MNIST数据集。      
+## How to use?
+1. mkdir /dataset, and put in the MNIST dataset.      
 ```python
 mkdir dataset
 ```
-2,本实验是采用一个ps一个worker，因此一定要打开两个终端。   
+2,This experiment uses one PS and one worker, so we must open two terminals. 
 ```python
 #ps
 python tensorflow_mnist.py --dataset_dir=`pwd`/dataset --result_dir=`pwd`/result  --job_name=ps
